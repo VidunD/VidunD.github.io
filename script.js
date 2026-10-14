@@ -1,14 +1,14 @@
 const skills=[
 {title:"Programming & Web Development",items:["Java","Python","MATLAB","HTML","CSS","JavaScript"]},
 {title:"Databases & Networking Tools",items:["SQL","MySQL Workbench","Cisco Packet Tracer","Postman"]},
-{title:"Creative Media",items:["Adobe Premiere Pro","Filmora","OBS Studio","YouTube Management","Content Creation"]},
-{title:"Business & Systems Administration",items:["Manager.io","WhatsAuto","Linux Ubuntu","Kali Linux","Dual-Boot Administration"]}
+{title:"Creative Media",items:["Adobe Premiere Pro","Filmora","OBS Studio","Video Editing","Social Media Post Design","Content Creation"]},
+{title:"Systems & Technical Tools",items:["Linux Ubuntu","Kali Linux","Dual-Boot Administration","Manager.io","WhatsAuto"]}
 ];
 const projects=[
 {mark:"JAVA",title:"Vehicle Rental Management System",type:"Software Development",desc:"A comprehensive Java-based application using Object-Oriented Programming, custom data structures, and sorting algorithms to efficiently manage vehicle rental operations.",tags:["Java","OOP","Data Structures","Algorithms"]},
 {mark:"FILM",title:"More Than Enough — Short Film",type:"Creative Media",desc:"An educational short film created for a university assignment to raise awareness about food waste. I handled scriptwriting, directing, and complete video/audio editing.",tags:["Scriptwriting","Direction","Video Editing","Audio Editing"]},
 {mark:"DATA",title:"Academic Research Project",type:"Research & Analytics",desc:"A mini research study analyzing podcast and educational video consumption patterns among university students, from Google Forms data collection through analysis and final presentation.",tags:["Google Forms","Data Collection","Analysis","Presentation"]},
-{mark:"WEB",title:"Ranowin Digital Catalog System",type:"Web & Business Systems",desc:"Ongoing development of a dynamic digital catalog and operational workflow for Ranowin Enterprises, including Google Sheets synchronization and customer communication automation.",tags:["HTML","CSS","JavaScript","Google Sheets","Automation"]}
+{mark:"WEB",title:"Ranowin Website",type:"Long-Term Web Development",desc:"A continuously maintained website project that I plan to keep updating over the long term with new content, design improvements, features, and technical enhancements.",tags:["HTML","CSS","JavaScript","Responsive Design","Ongoing Maintenance"]}
 ];
 function tagList(items,cls){return '<div class="'+cls+'">'+items.map(function(x){return '<span>'+x+'</span>';}).join('')+'</div>';}
 document.getElementById("skillsGrid").innerHTML=skills.map(function(s){return '<article class="glass card reveal"><small>SKILL SET</small><h3>'+s.title+'</h3>'+tagList(s.items,"skill-items")+'</article>';}).join('');
